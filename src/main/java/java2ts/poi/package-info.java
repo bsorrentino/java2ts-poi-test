@@ -1,6 +1,7 @@
  @Java2TS(declare = {
 
-    @Type(value=java.lang.Iterable.class),
+    @Type(value=java.lang.Iterable.class, export=true),
+    @Type(value=java.util.Iterator.class),
     @Type(value=StreamSupport.class, export=true),
     @Type(value=java.util.Spliterator.class),
     @Type(value=java.util.stream.Stream.Builder.class),

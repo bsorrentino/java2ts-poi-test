@@ -1,13 +1,8 @@
 import {
   Stream,
-  StreamSupport
+  StreamSupport,
+  Iterable,
 } from "excel-types";
-
-interface IterableStatic {
-  new<T>( arg0:java.lang.Iterable<T> ):java.lang.Iterable<T>;
-}
-
-const Iterable:IterableStatic  = Java.type("java.lang.Iterable");
 
 
 export function streamFromIterator<T>( ii:java.util.Iterator<T>) {
